@@ -1,0 +1,127 @@
+/* start global rules*/
+*{
+    box-sizing:border-box;
+    box-sizing:border-box;
+    box-sizing:border-box;
+}
+/* end global rules*/
+body{
+    direction: rtl;
+    background-color: transparent;
+    color:#fff;
+    font-family: JFflat;
+    
+}
+
+iframe{
+    margin: 20px auto 5px auto;
+    display: block;
+    border: 2px solid #444;
+    border-radius: 2px;
+}
+.indexes{
+    
+}
+.contents{
+    padding-right: 20px;
+    line-height: 22px
+}
+
+
+@font-face {
+    font-family:JFflat;
+    src: url('../fonts/JFflat.ttf');
+}
+
+
+@media(max-width:383px ){/* x small */
+    div{
+        font-size:13px;
+        font-weight:700;
+        line-height: 15px;
+    }
+    div h1{
+        margin:5px -20px 5px 0px;
+        padding: 0px;
+        font-weight:900;
+        font-size:16px;
+    }
+    
+    iframe{
+        width:250px;
+        height: 141px;
+    }
+}/*x small*/
+
+@media(min-width: 384px) and (max-width: 767px){/* small */  
+div{
+        font-size:14px;
+        font-weight:600;
+    }
+    div h1{
+        margin:5px -20px 5px 0px;
+        padding: 0px;
+        font-weight:700;
+        font-size:17px;
+    }
+    
+    iframe{
+        width:500px;
+        height:281px;
+    }
+}/*small*/
+
+@media(min-width: 768px) and (max-width: 991px){/*medium*/
+    div{
+        font-size:15px;
+        font-weight:700;
+    }
+    div h1{
+        margin:5px -20px 5px 0px;
+        padding: 0px;
+        font-weight:800;
+        font-size:18px;
+    }
+    
+     iframe{
+        width:640px;
+        height: 360px;
+    }
+}/*medium*/
+
+@media(min-width: 992px) and (max-width: 1199px){/*large*/
+    div{
+        font-size:100px;
+        font-weight:500;
+    }
+    div h1{
+        margin:2px 1px;
+        padding: 2px;
+        font-weight:500;
+        font-size:16px;
+    }
+    
+     iframe{
+        width:640px;
+        height: 360px;
+    }
+}/*large*/
+
+@media(min-width: 1200px){/* x large */
+    div{
+        font-size:100px;
+        font-weight:700;
+        line-height: 18px;
+    }
+    div h1{
+        margin:2px 1px;
+        padding: 2px;
+        font-weight:900;
+        font-size:16px;
+    }
+    
+    iframe{
+        width:640px;
+        height: 360px;
+    }
+}/*x large*/
