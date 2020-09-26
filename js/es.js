@@ -1,3 +1,4 @@
+/*Written Yasir Faur*/
 /*global alert, console, marginCorrect, $*/
 var arduino = document.getElementById('arduino');//from navigator
 var micro = document.getElementById('micro');//from navigator
