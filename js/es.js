@@ -37,7 +37,7 @@ arduinoArticles.onclick  = function () {
 
 facebookIcon.onclick = function () {
     "use strict";
-    window.open("https://www.facebook.com/YasirFaur", "_blank", "", "false");
+    window.open("https://www.facebook.com/yasir.faur.3", "_blank", "", "false");
 };
 
 wordpressIcon.onclick = function () {
