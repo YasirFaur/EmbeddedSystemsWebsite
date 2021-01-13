@@ -74,9 +74,16 @@ iframe{
 }
 
 .myimg{
-    border:2px solid #ddd;
+    border:2px solid #535353;
     border-radius: 4px;
-    margin: 10px auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 56%;
+    display: block;
+    box-shadow: 2px 2px 2px #535353, -2px -2px 2px #535353;
+}
+
+.xlmyimg{
     width: 100%;
 }
 
@@ -124,8 +131,9 @@ div{
     div h1{
         margin:5px -20px 5px 0px;
         padding: 0px;
-        font-weight:700;
-        font-size:17px;
+        font-weight:500;
+        font-size:3.5vw;
+        letter-spacing: 1px;
     }
     
     iframe{
