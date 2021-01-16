@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="ar">
+    <head>
+        <title>microcontroller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="basics of electronics" />
+        <meta name = "keywords" content = "basics of electronics" />
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" href   =   "../css/normalize.css"/>
+        <link rel = "stylesheet" href   =   "../css/articles.css"/>
+         
+    </head>
+    <body>
+        <article>
+            <iframe scrolling = "no" width="854" height="480" src="https://www.youtube.com/embed/S-6zBiAcJpg?list=PL4Xt-92_QIXctSptINpG2WWqdkAroZwh_" frameborder="0" allowfullscreen></iframe>
+            
+            <div class = "contents">
+                <h1>تحليل الدّارات(Circuits analysis):</h1><!--title-->
+                تحليل الشّيء هو بيان أجزائه ووظيفة كل جزء، أو تقسيم الكل إلى أجزاء وعناصر تكوّنه لفهم آلية عمل هذا الكل المُتكامل، أو إعادة بناء مشابه له، أو فهم دور جزء منه، بقصد تبسيط المُعقد وفهمه.<figure><img src="../images/basics/b12i1.PNG" alt="التحليل الكهربائي للماء" class="myimg"></figure><!--you can use "xlmyimg" for big image-->
+                التّحليل قد يكون عملية محسوسة ملموسة كتحليل الماء لعناصره الأساسية باستخدام التّحليل الكهربائيّ، حيث نعمل على تمرير تيّار بوعاء حاوي للماء بتطبيق جهد مرتفع لنُلاحظ بعدها تصاعد فقاعات غازيّة عند القطب الموجب والسّالب كما يظهر بالرّسم رقم (1). يتجمّع غاز الهيدروجين عند السّالب بينما يتجمّع الأوكسجين عند الموجب، ويُلاحظ بأنّ حجم الهيدروجين ضعف حجم الأوكسجين وهذا ما يؤكد تشكل جزيء الماء من ذرّتي هيدروجين وذرّة أوكسجين واحدة. يُجمع غاز الهيدروجين ويخزّن كسائل تحت ضغط عالي ليستخدم فيما بعد كوقود سريع الاشتعال وصديق للبيئة, أو يستعمل بعمليات اللّحام وقطع المعادن بينما يُجمع الأوكسجين ويُخزّن تحت ضغط عالي مع التبريد كسائل أيضاً وله العديد من الاستخدامات الطّبية والصّناعية. عكس التّحليل هو التّركيب كأن نأخذ الغازين المذكورين ونضعهما بوعاء ومن خلال شرارة كهربائيّة تحدث عملية احتراق الهيدروجين الّتي ماهي إلا اتحاده مع الأوكسجين واعادة انتاج الماء مع إطلاق كم من الطّاقة الحرارية، وبأضدادها تعرف الأشياء. لم أورد ما سبق لشرح التّحليل الكهربائيّ، وإنما فقط لتقريب مبدأ التحليل للأذهان، وتذكيرك بواحدة من استخدامات الأثر الكيميائي للتّيّار الكهربائيّ المفيدة.<br>
+                التّحليل قد يكون عملية عقلية نلجأ لها لتبسيط وحل مشاكلنا الكبيرة كأن نصادف دارة تحتوي مصدر للتّغذية وأحمال ذات توصيل مختلط كالّتي تظهر بالرّسم رقم (2)  ولسبب ما أردنا معرفة التّيّار المار بها عند تطبيق الجهد 1.5 فولت مستمر بعد إغلاق المفتاح SW1
+                <figure><img src="../images/basics/b12i2.PNG" alt="دارة مختلطة يراد تبسيطها" class="myimg xlmyimg"></figure>
+                <figure><img src="../images/basics/b12i3.PNG" alt="دارة مختلطة يراد تبسيطها" class="myimg xlmyimg"></figure>
+                <figure><img src="../images/basics/b12i4.PNG" alt="دارة مختلطة يراد تبسيطها" class="myimg"></figure>
+                سنسارع عندها لاستدعاء وتطبيق قانون أوم لحساب التّيّار كما يلي:<span class="formula">I = V / R</span>
+                لكن مع غياب قيمة المقاومة الكلّية للدّارة R يستحيل الحساب ونضطر لتحليلها لاستخلاص المقاومة الكلّية (المكافئة) للدّارة، أولاً نستبدل المصابيح BL1... BL4 بمقاومات قيمة كل منها 7.5 أوم وهي المقاومة الكهربائيّة لفتيل المصباح لتصبح الدّارة كما بالرّسم رقم (3) الّذي يساعدنا على التّفكير بالمصابيح كعناصر كهربائيّة بدل النّظر لها كمصابيح متوهجة بلون ما، وتمتلك حجم وشكل، وتباع بسعر، وشدّة إضاءة تبلغ كذا وأمور أخرى لا تعنيني عند حساب التّيّار المُستجر من قبلها. ثانياً سنقوم بتحويل المقاومات الأربعة R1, R2, R3, R4 إلى مقاومة واحدة سنسميها R لتصبح الدّارة كما بالرّسم رقم (4) عبارة عن مصدر جهد 1.5 فولت مستمر ومقاومة قيمتها 12.5 أوم يمر فيها تيّار شدّته: <span class="ltr">I = 1.5 / 12.5 = 0.12A</span> كما يظهر عند حسابه بقانون أوم مع أفتراض ثبات جهد المدّخرة عند الـ 1.5 فولت، وأهمال مقاومة المفتاح SW1، ومقاومة أسلاك التّوصيل الّتي تكون عملياً قريبة من الـ 0 أوم.<br>
+                التّحليل قادنا لتبسيط الدّارة من مختلطة لأساسية من السّهل حساب شدّة التّيّار المار فيها وبذات السّهولة يمكن حساب الاستطاعة المستهلكة بالدّارة كما يلي:<br>
+                <span class="ltr">P = I * V</span>
+                <span class="ltr">P = 0.12 * 1.5</span>
+                <span class="ltr">P = 0.18W</span>
+                أو:<br>
+                <span class="ltr">P = I^2 * R</span>
+                <span class="ltr">P = 0.12 ^2 * 12.5</span>
+                <span class="ltr">P = 0.0144 * 12.5</span>
+                <span class="ltr">P = 0.18W</span>
+                أو:<br>
+                <span class="ltr">P = V^2 / R</span>
+                <span class="ltr">P = 1.5 ^2 / 12.5</span>
+                <span class="ltr">P = 2.25 / 12.5</span>
+                <span class="ltr">P = 0.18W</span>
+                طبعاً الاستطاعة بدارة المصابيح تُصرف أو تُستهلك كطاقة حرارية تعمل على تسخين فتيل المصباح ليتوهج ويصدر ضوء.<br>
+                تحليل الدّارات يفيدنا بتبسيط الحسابات ومعرفة قيمة وقطبيّة الجهود، وشدّة واتجاه التّيّارات؛ وللقيام به ينبغي امتلاك قوانين ونظريات وطرق كقانون أوم، واختزال أو اختصار الدّارة بايجاد المقاومة المكافئة لجزء أو كل الدّارة وهذا ما سنتعرف عليه بالدّرس القادم بتوصيل المقاومات تسلسلياً وتفرعياً، وهو ما استخدمناه عندما استنتجنا المقاومة المكافئة للمصابيح الأربعة. يضاف للقوانين والنّظريات برامج لرسم ومحاكاة وتحليل الدّارات كـ Circuit Wizard و Proteus و Multisim.<br>
+                عملياً هل نضطر لتحليل الدّارة أثناء الصّيانة أو التّصميم؟ الجواب: نعم نقوم به بشكل مباشر أو غير مباشر ولمرة واحدة أو مراراً وتكراراً. أثناء التّصميم تتولى عمليتي التّركيب والتّحليل للحصول على أفضل نتيجة وأداء من الدّارة.<br>
+                ختاماً يرمز للمقاومة الكهربائيّة الثّابتة بالمخططات بأحد الرّمزين التّاليين:<figure><img src="../images/basics/b12i5.PNG" alt="رمز المقاومة" class="myimg"></figure>
+                <br>&#9889يمكنك تنزيل وعرض الدرس كملف بي دي أف من <a href="https://drive.google.com/file/d/1tC9xIfk781THUSydrmbW12UkVznuhbHl/view?usp=sharing  " target="_blank">هنا.</a>
+                <br>&#9889يمكنك المشاركة والتعليق بالنقر <a href="https://www.facebook.com/yasir.faur.3/posts/968552473672837" target="_blank">هنا.</a>
+                <br>&#9889للحصول على مساعدة ومناقشة موضوع الدرس يمكنك الانضمام لمجموعة #تبسيط_الإلكترونيات على الواتساب من <a href="https://chat.whatsapp.com/KiW3yyh2eeB1Nz03BWIkfA" target="_blank">هنا.</a>
+            </div>
+<!--starting quiz-->
+            <div class="quiz">
+                <div id = "countdown" class="">
+                    <lable id = "sq" >الوقت المخصص للاختبار <span id="quizTime">100</span> ثانية, انقر هنا للبدأ.</lable><!--sq: start quiz-->
+                </div>
+<!--first question-->
+                <div id="q1" class="q1">
+                    <label></label><br><!--q1: first question-->
+                    
+                    <input type = "radio" id = "q1a1" name = "fq"><!--q1a1: first answer for first question-->
+                    <label for="q1a1"></label><br>
+                    
+                    <input type = "radio" id = "q1a2" name = "fq"><!--fq: first question-->
+                    <label for="q1a2"></label><br>
+                    
+                    <input type = "radio" id = "q1a3" name = "fq">
+                    <label for="q1a3"></label><br>
+                    
+                </div>
+<!--second question-->    
+                <div id="q2" class="q2"><!--q2: second question-->
+                    <label></label><br>
+                    
+                    <input type = "radio" id = "q2a1" name = "sq"><!--q2a1: first answer for second question-->
+                    <label for="q2a1"></label><br>
+                    
+                    <input type = "radio" id = "q2a2" name = "sq"><!--second question-->
+                    <label for="q2a2"></label><br>
+                    
+                    <input type = "radio" id = "q2a3" name = "sq">
+                    <label for="q2a3"></label><br>
+                    
+                </div>
+<!--third question-->
+                <div id="q3" class="q3">
+                    <label></label><br><!--q3: third question-->
+                    
+                    <input type = "radio" id = "q3a1" name = "tq"><!--q3a1: first answer for third question-->
+                    <label for="q3a1"></label><br>
+                    
+                    <input type = "radio" id = "q3a2" name = "tq"><!--third question-->
+                    <label for="q3a2"></label><br>
+                    
+                    <input type = "radio" id = "q3a3" name = "tq">
+                    <label for="q3a3"></label><br>
+                    
+                </div>
+            </div>
+<!--end quiz-->
+        </article>
+        <script src = "../js/articles.js"></script>
+    </body>
+</html>

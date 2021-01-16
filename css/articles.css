@@ -35,9 +35,34 @@ iframe{
 }
 
 .contents a{
-    color: darkgoldenrod;
+    color:#ffc83d;
 }
 
+.formula{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.ltr{/*left to right for proplems*/
+    display: block;
+    width: 100%;
+    text-align: left;  
+}
+
+table{
+width: 100%;    
+}
+
+table, th, td{
+    border:1px solid #ffffff;
+}
+
+td{
+    padding: 4px;
+    direction: ltr;
+}
 .quiz{
     border: 2px solid #ddd;
     color: #ffffff;

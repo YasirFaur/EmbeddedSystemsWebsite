@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ar">
+    <head>
+        <title>microcontroller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="internet of things" />
+        <meta name = "keywords" content = "internet of things, iot" />
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" href   =   "../css/normalize.css"/>
+        <link rel = "stylesheet" href   =   "../css/articles.css"/>
+         
+    </head>
+    <body>
+        <article>
+            <iframe scrolling = "no" width="854" height="480" src="https://www.youtube.com/embed/S-6zBiAcJpg?list=PL4Xt-92_QIXctSptINpG2WWqdkAroZwh_" frameborder="0" allowfullscreen></iframe>
+            
+            <div class = "contents">
+                <h1>قانون أوم (Ohm's Law):</h1>
+                بعد عدة تجارب قام بها (جورج سيمون أوم) على الجهد والتّيّار الكهربائيّ مُستخدِماً خلالها سلكاً متغيّر الطّول توصّل لعلاقة تربط بين المفاهيم الثّلاثة الأساسية بالكهرباء هي فرق الجهد (V) وشدّة التّيّار (A) و قيمة المقاومة الكهربائيّة (R).<br>
+                لاحظ مع أزدياد طول السّلك انخفاض بشدّة التّيّار المار خلاله، محافظاً خلال تجربته على قيمة الجهد المطبق على طرفي السّلك ثابتة لا تتغيّر. فاستنتج وجود علاقة عكسيّة بين المقاومة والتّيّار الكهربائيّ بما أنّ المقاومة تزداد مع زيادة طول السّلك النّاقل.<figure><img src="../images/basics/b8i1.PNG" alt="قانون أوم" class="myimg"></figure>
+                أعاد التجّربة لكن هذه المرة لم يقم بتغيير طول السّلك وإنما استخدم فرق جهد أكبر تارة وأصغر تارة أخرى ليلاحظ أزدياد التّيّار مع زيادة فرق الجهد المطبق بين طرفي السّلك. طبعاً خلال التّجربة حاله كحال العلماء - عشاق الدّقة والتّفاصيل - حافظ على درجة حرارة 20-25 درجة مئوية آخذاً بعين الاعتبار الضّغط الجوّيّ، نسبة الرّطوبة، نقاوة السّلك، حالته الفيزيائيّة وعدم تعرضه لأي مجال مغناطيسيّ يفسد عليه لحظة الاكتشاف. من بين الكثير من التّجارب والمعادلات المعقدة خرج السّيد أوم بقانون يحتوي فقط خمسة رموز سُمّي بقانون أوم:<br>
+                <span class="formula"> V = R * I</span>
+                V: فرق الجهد المطبق على النّاقل مُقاساً بالفولت (V).<br>
+                R: المقاومة الكهربائيّة مُقاسة بالأوم (ohm).<br>
+                I: شدّة التّيّار المار بالنّاقل مُقاساً بالأمبير (A).<br>
+                يفيدنا القانون السّابق بحساب الجهد المطبق على النّاقل عند معرفة التّيّار المار فيه ومقاومته الكهربائيّة، ومنه يمكن حساب التّيّار المُستَجر من النّاقل كما يلي:<br>
+                <span class="formula">I = V / R</span>
+                وليس صعباً استنتاج قيمة المقاومة حسابياً:
+                <span class="formula">R = V/I</span>
+                سابقاً قدّمنا تعريفاً فيزيائياً للفولت بأنه عمل قدره 1 جول لنقل شحنة قدرها 1 كولوم أو (6.241 * 18^10) إلكتروناً. وأوردنا تعريفاً فيزيائيّاً للأمبير على أنه كمّية شحنة مقدارها ( 6.241 * 18^10 ) إلكتروناً تمر عبر ناقل خلال ثانية واحدة.<br>
+                حان الآن الوقت لتقديم تعريف عملي، وأسهل للفولت على أنه الجهد المتولد بين طرفي ناقل مقاومته 1 أوم عندما يعبره تيّار شدّته 1 أمبير.<br>
+                كما بإمكانك إعادة تعريف الأمبير على أنّه التّيّار المار خلال ناقل مقاومته 1 أوم عندما يطبق عليه جهد 1 فولت.<br>
+                ولا مانع من تذكر الأوم على أنه مقاومة ناقل يمرّر تيّار شدّته 1 أمبير عند تطبيق جهد 1 فولت بين طرفيه.<br>
+                عملياً نجد المقاومة  كخاصية بأسلاك التّوصيل، أدوات التّسخين والكتل المعدنيّة أو كعنصر مستقل بحد ذاته مُصنّع بقيم وأشكال وأحجام مختلفة يُستعمل بالدّارات الإلكترونيّة.<figure><img src="../images/basics/b8i2.PNG" alt="المقاومة الكهربائية" class="myimg xlmyimg"></figure>
+                كذلك الأمر بالنّسبة لفرق الجهد الّذي نجده بين طرفي مدّخرة، مولّد أو وحدات تغذية كشاحن جوالك. لكن عندم تسمع بالتّيّار الكهربائيّ عليك أن تتساءل بأيّة مقاومة مرّ وما هو مقدار الجهد الّذي دفع سيل الإلكترونات لعبور المقاومة.<br>
+                فعندما تنزل صاعقة من الغيوم إلى الأرض أو تصعد من الأرض نحو السّماء أمام ناظريك لا ينحصر  تفكيرك فقط بآلاف الأمبيرات الّتي مرّت بل تخيّل – والخيال أهم من المعرفة - آلاف الفولتات الّتي طُبِقت على الهواء العازل بين الغيوم والأرض ذو المقاومة العالية جداً المُقدّرة بملايين الأوم.<br>
+                نستخدم قانون أوم لفهم الدّارات الكهربائيّة والإلكترونيّة ولاستنتاج قوانين أخرى تمنحنا المعرفة بجهود كل نقطة من الدّارة، والتّيّارات المارة بكل فروعها، ومقاومتها الكليّة أو الجزئيّة وتقدير مدى حاجتها من الاستطاعة الكهربائيّة. وهذه المعرفة بأدق تفاصيل الدّارة نعتمد عليها لاختيار مصدر التّغذية المناسب، والأسلاك الأنسب للتّوصيل، وتقدير الكلفة على سبيل المثال لا الحصر.<br>
+                <br>&#9889يمكنك تنزيل وعرض الدرس كملف بي دي أف من <a href="https://drive.google.com/file/d/1A02K36GomLEBp9BdC2rkDzNcYlMj02zZ/view?usp=sharing" target="_blank">هنا.</a>
+                <br>&#9889يمكنك المشاركة والتعليق بالنقر <a href="https://www.facebook.com/yasir.faur.3/posts/960268934501191" target="_blank">هنا.</a>
+                <br>&#9889للحصول على مساعدة ومناقشة موضوع الدرس يمكنك الانضمام لمجموعة #تبسيط_الإلكترونيات على الواتساب من <a href="https://chat.whatsapp.com/KiW3yyh2eeB1Nz03BWIkfA" target="_blank">هنا.</a>
+            </div>
+<!--starting quiz-->
+            <div class="quiz">
+                <div id = "countdown" class="">
+                    <lable id = "sq" >الوقت المخصص للاختبار <span id="quizTime">100</span> ثانية, انقر هنا للبدأ.</lable><!--sq: start quiz-->
+                </div>
+<!--first question-->
+                <div id="q1" class="q1">
+                    <label >مع زيادة طول السلك الناقل للتيار الكهربائي...</label><br><!--q1: first question-->
+                    
+                    <input type = "radio" id = "q1a1" name = "fq"><!--q1a1: first answer for first question-->
+                    <label for="q1a1">تزداد المقاومة الكهربائية.</label><br>
+                    
+                    <input type = "radio" id = "q1a3" name = "fq">
+                    <label for="q1a3">تنخفض المقاومة الكهربائية</label><br>
+                    
+                    <input type = "radio" id = "q1a2" name = "fq"><!--fq: first question-->
+                    <label for="q1a2">يزداد التيار المار فيه.</label><br>
+                    
+                </div>
+<!--second question-->    
+                <div id="q2" class="q2"><!--q2: second question-->
+                    <label>حسب قانون أوم فرق الجهد بين طرفي ناقل هو:</label><br>
+                    
+                    <input type = "radio" id = "q2a2" name = "sq"><!--second question-->
+                    <label for="q2a2">V = R / I</label><br>
+                    
+                    <input type = "radio" id = "q2a3" name = "sq">
+                    <label for="q2a3">V = R / I</label><br>
+                    
+                    <input type = "radio" id = "q2a1" name = "sq"><!--q2a1: first answer for second question-->
+                    <label for="q2a1">V = R * I</label><br>
+                    
+                </div>
+<!--third question-->
+                <div id="q3" class="q3">
+                    <label>وفق قانون أوم التيار المار بناقل يحسب كما يلي:</label><br><!--q1: first question-->
+                    
+                    <input type = "radio" id = "q3a1" name = "tq"><!--q3a1: first answer for third question-->
+                    <label for="q3a1">I = V / R</label><br>
+                    
+                    <input type = "radio" id = "q3a2" name = "tq"><!--third question-->
+                    <label for="q3a2">I = R / V</label><br>
+                    
+                    <input type = "radio" id = "q3a3" name = "tq">
+                    <label for="q3a3">I = V * R</label><br>
+                </div>
+            </div>
+<!--end quiz-->
+        </article>
+        <script src = "../js/articles.js"></script>
+    </body>
+</html>
