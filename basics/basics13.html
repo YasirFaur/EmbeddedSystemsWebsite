@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="ar">
+    <head>
+        <title>microcontroller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="basics of electronics" />
+        <meta name = "keywords" content = "basics of electronics" />
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" href   =   "../css/normalize.css"/>
+        <link rel = "stylesheet" href   =   "../css/articles.css"/>
+         
+    </head>
+    <body>
+        <article>
+            <iframe scrolling = "no" width="854" height="480" src="https://www.youtube.com/embed/S-6zBiAcJpg?list=PL4Xt-92_QIXctSptINpG2WWqdkAroZwh_" frameborder="0" allowfullscreen></iframe>
+            
+            <div class = "contents">
+                <h1>توصيل المقاومات الكهربائيّة:</h1><!--title-->
+                البعض المُطّلع على الإلكترونيّات يظن بأنّ المقصود بكلامي حول توصيل المقاومات هو فقط ذلك العنصر الإلكترونيّ ذو الأحجام والأشكال المتعددة المُبيّن بالرّسم رقم (1) الّذي لا تخلو منه دارة الكترونيّة، بينما نحن نريد الحديث عن المقاومة (Resistance) كمفهوم وليس المقاومة كأداة (Resistor).<figure><img src="../images/basics/b13i1.PNG" alt="المقاومة كعنصر" class="myimg"></figure>
+                عملياً الأسلاك الطّويلة جداً أنا مضطر للتّعامل معها كمقاومة, نقاط التّوصيل السّيئة بسبب نقاط اللّحام المُتأكسِدة ستظهر لي كمقاومة كبيرة، السّخانات داخل الفرن تعتبر مقاومات, تماسات المفاتيح والقواطع الكهربائيّة المُهترِئة سأجدها مقاومة كبيرة لا يمكن إهمالها بالحسابات والتّشخيص, جلد الإنسان يُنظّر له كمقاومة متغيّرة وفق تعرقه, الحذاء الّذي ارتديه كعازل كهربائيّ لابد لي أن أفكر به كمقاومة خاصةً عند التّعامل مع الجهود العالية وإلا سأواجه عواقب وخيمة, محرك الغسالة والبراد أتعامل معه أحياناً كمقاومة!<br>
+                المقاومات قد تجدها متصلة ببعضها تسلسلياً، تفرعياً أو بشكل مختلط. وقد تضطرّ أنت لهذا النّوع من التّوصيل لتوزيع الجهود والتّيّارات والاستطاعة على عدة أحمال، وعند التّعامل مع المقاومة كعنصر إلكترونيّ قد تحتاج لمقاومة أكبر تجدها بالتّوصيل التّسلسليّ لمقاومتين أو أكثر, أو مقاومة أصغر يتم تشكيلها بالرّبط التّفرعيّ لمقاومتين أو أكثر, بموقف ما اضطررت شخصياً للتّوصيل المختلط للحصول على مقاومة تتحمل استطاعة أكبر.<br>
+                1)	توصيل المقاومات على التّسلسل(Resistances in series):<br>
+                يظهر بالرّسم رقم (2) توصيل ثلاث مقاومات على التّسلسل (التّوالي) يُطبّق عليهم فرق جهد مقداره 1.5 فولت مستمر. بهذه الدّارة يتدفق التّيّار الكهربائيّ من الموجب للسّالب عبر المقاومات الثّلاث ويكون ثابت الشدّة بكل أجزاء الدّارة أي شدّة التّيّار المار بالمقاومة R1 هي ذاتها بالمقاومة R2 والمقاومة R3. يُلاحظ بأنّ فرق الجهد الكُلّيّ V1 = 1.5v يتوزع على المقاومات الثّلاث بظاهرة تسمى هبوط الجهد.<br>
+                يمكن النّظر للمقاومات الثّلاث كمقاومة واحدة R قيمتها تساوي حاصل جمعها:<figure><img src="../images/basics/b13i2.PNG" alt="المقاومات على التسلسل" class="myimg"></figure>
+                <span class="formula">R = R1 + R2 +R3</span>
+                بهذه الدّارة يُلاحظ عدم استخدمنا للمدّخرة كمصدر للجهد وإنّما مصدر جهد مستمر مثاليّ يُفترض به الثّبات عند تغيّر الحمل (قيمة المقاومة) وتقديمه التّيّار والاستطاعة الكافية لضمان عمله بحدود المعقول؛ فلا يعقل توصيل مقاومة 0 صفر أوم بين طرفي هذا المصدر ثم توقع استمرار تقديمه لجهد ثابت وتيّار لا نهائيّ، بل عليك توقع توقفه عن العمل أو عطبه. للمزيد من الإيضاح لنفترض المقاومات الثّلاث متساوية القيمة كل منها 100 أوم عندها تكون المقاومة المكافئة R :<br>
+                <span class="ltr">R = R1 + R2 + R3</span>
+                <span class="ltr">R = 100 + 100 + 100</span>
+                <span class="ltr">R = 300 ohm</span>
+                ولحساب التّيّار المار عبر المقاومات الثّلاث نطبق قانون أوم:<br>
+                <span class="ltr">I = V / R</span>
+                <span class="ltr">I = 1.5 / 300</span>
+                <span class="ltr">I = 0.005 A = 5 mA</span>
+                ولحساب الجهد بين طرفي كل مقاومة نعيد تطبيق قانون أوم على كل مقاومة بشكل منفصل كما يلي:<br>
+                <span class="ltr">Vr1 = I * R1</span>
+                <span class="ltr">Vr1 = 0.005 * 100 = 0.5 V</span>
+                <br>
+                <span class="ltr">Vr2 = I * R2</span>
+                <span class="ltr">Vr2 = 0.005 * 100 = 0.5 V</span>
+                <br>
+                <span class="ltr">Vr3 = I * R3</span>
+                <span class="ltr">Vr3 = 0.005 * 100 = 0.5 V</span>
+                وليس صعباً عليك حساب الاستطاعة المستهلكة بالدّارة بتطبيق قانون الاستطاعة كما يلي:<br>
+                <span class="ltr">P = V * I</span>
+                <span class="ltr">P = 1.5 * 0.005 </span>
+                <span class="ltr">P = 0.0075 W = 7.5 mW</span>
+                ولو طلب منك حساب الاستطاعة المستهلكة (المصروفة) بكل مقاومة على حدة لا تتردد باستخدام الصّيغة الأخرى لقانون الاستطاعة كمايلي:<br>
+                <span class="ltr">P1 = I^2 * R1</span>
+                <span class="ltr">P1 = 0.005 ^2 * 100</span>
+                <span class="ltr">P1 = 0.000025 * 100</span>
+                <span class="ltr">P1 = 0.0025 W = 2.5mW</span>
+                <br>
+                <span class="ltr">P2 = I^2 * R2</span>
+                <span class="ltr">P2 = 0.005 ^2 * 100</span>
+                <span class="ltr">P2 = 0.000025 * 100</span>
+                <span class="ltr">P2 = 0.0025 W = 2.5mW</span>
+                <br>
+                <span class="ltr">P3 = I^2 * R2</span>
+                <span class="ltr">P3 = 0.005 ^2 * 100</span>
+                <span class="ltr">P3 = 0.000025 * 100</span>
+                <span class="ltr">P3 = 0.0025 W = 2.5mW</span>
+                الحسابات السّابقة هي تحليل حقيقي للدّارة بقصد فهمها، وهذا التّحليل ينطبق على مقاومتين أو أكثر .<br>
+                2)	توصيل المقاومات على التّفرع (Resistances in parallel):<br>
+                يُبيّن الرّسم رقم (3) توصيل ثلاث مقاومات على التّفرع (التّوازي) يطبق عليهم فرق جهد 1.5 فولت مستمر. بهذه الدّارة يتدفق التّيّار الكهربائيّ من الموجب إلى العقدة A حيث يتفرع وتنقسم شدّته ليمرّ كل جزء منه بإحدى المقاومات R1, R2, R3 ثم يعاود الاجتماع عند النقطة B ليكمل تدفقه نحو القطب السّالب. يُلاحظ بأنّ فرق الجهد V1 = 1.5V هو ذاته على المقاومات الثّلاث. يمكن اعتبار المقاومات الثلاث مقاومة واحدة R تحسب قيمتها كما يلي:<figure><img src="../images/basics/b13i3.PNG" alt="المقاومات على التفرع" class="myimg xlmyimg"></figure>
+                <span class="formula">1/R = 1/R1 + 1/R2 + 1/R2</span>
+                للمزيد من الايضاح لِنُجري تحليلاً للدّارة نحسب فيه التّيّارات والجهود والاستطاعة المستهلكة  بكل وأجزاء الدّارة، ولِنفترِض تساوي المقاومات الثّلاث بالقيمة كل منها 100 أوم. عندها تحسب المقاومة R المكافئة (الكليّة) للدّارة كما يلي:<br>
+                <span class="ltr">1/R = 1/R1 + 1/R2 + 1/R3</span>
+                <span class="ltr">1/R = 1/100 + 1/100 + 1/100</span>
+                <span class="ltr">1/R = 0.01 + 0.01 + 0.01</span>
+                <span class="ltr">1/R = 0.03</span>
+                <span class="ltr">R = 1/0.03</span>
+                <span class="ltr">R = 33.333 ohm</span>
+                المقاومة الكليّة للدّارة 33.333 أوم بتطبيق قانون أوم على هذه المقاومة والجهد V1 نحسب التّيّار المار بين العقدتين A, B مجموع التّيّارات الثّلاث المارة بالمقاومات.<br>
+                <span class="ltr">I = V1 / R</span>
+                <span class="ltr">I = 1.5 / 33.333</span>
+                <span class="ltr">I = 0.045 A = 45mA</span>
+                ولحساب التّيّار المار بكل فرع من فروع الدّارة نحسب كما يلي:<br>
+                <span class="ltr">I1 = V1 / R1</span>
+                <span class="ltr">I1 = 1.5 / 100</span>
+                <span class="ltr">I1 = 0.015 A = 15mA</span>
+                <br>
+                <span class="ltr">I2 = V1 / R2</span>
+                <span class="ltr">I2 = 1.5 / 100</span>
+                <span class="ltr">I2 = 0.015 A = 15mA</span>
+                <br>
+                <span class="ltr">I3 = V1 / R3</span>
+                <span class="ltr">I3 = 1.5 / 100</span>
+                <span class="ltr">I3 = 0.015 A = 15mA</span>
+                ومن السّهل حساب الاستطاعة الكليّة (الأجمالية) المستهلكة بالدّارة كما يلي:<br>
+                <span class="ltr">P = I * V</span>
+                <span class="ltr">P = 0.045 * 1.5</span>
+                <span class="ltr">P = 0.0675 W = 67.5 mW</span>
+                باستخدام الصّيغة الثّانية من قانون الاستطاعة يمكننا حساب الاستطاعة المستهلكة بكل فرع من فروع الدّارة كما يلي:<br>
+                <span class="ltr">P1 = Ir1 ^2 * R1</span>
+                <span class="ltr">P1 = 0.015 ^2 * 100</span>
+                <span class="ltr">P1 = 0.000225 * 100</span>
+                <span class="ltr">P1 = 0.0225 W = 22.5 mW</span>
+                <br>
+                <span class="ltr">P2 = Ir2 ^2 * R1</span>
+                <span class="ltr">P2 = 0.015 ^2 * 100</span>
+                <span class="ltr">P2 = 0.000225 * 100</span>
+                <span class="ltr">P2 = 0.0225 W = 22.5 mW</span>
+                <br>
+                <span class="ltr">P3 = Ir3 ^2 * R1</span>
+                <span class="ltr">P3 = 0.015 ^2 * 100</span>
+                <span class="ltr">P3 = 0.000225 * 100</span>
+                <span class="ltr">P3 = 0.0225 W = 22.5 mW</span>
+                بالمقارنة بين الاستطاعة المستهلكة بالدّارة التّسلسليّة المساوية لـ 7.5 mW مع الاستطاعة المستهلكة بالدّارة التّفرعيّة المساوية لـ 67.5 mw نجد الأخيرة أكبر تسعة مرات من الأولى رغم استخدام ذات المقاومات بكلتا الدّارتين؛ الأمر الّذي يُحتم عليّ تذكيرك بما قاله الفيزيائيّ جول  " كمية الحرارة النّاتجة في الثّانية الواحدة في ناقل بفعل مرور تيّار كهربائيّ تكون متناسبة طرداً مع المقاومة الكهربائيّة للنّاقل و مع مربع التّيّار الكهربائيّ" وهنا أضع خط تحت مربع التّيّار للفت انتباهك إلى التّيّار الأكبر 45 ميلي امبير المُستجر من مصدر التّغذية بالدّارة التّفرعيّة.<br>
+                قبلما أنتقل لاستعراض توصيل المقاومات بشكل مختلط، أريد التّنويه لخطأ كنا نقع به عندما كنا تلاميذ وهو القيام بالحسابات والوصول لنتيجة صحيحة كرقم دون أن نُتبِعُهُ بذكر وحدة القياس، الخطأ الآخر الأكثر شيوعاً هو استخدام الأجزاء والمضاعفات عند تطبيق قانون ما، على سبيل المثال لتطبيق قانون الاستطاعة على مقاومة 100 أوم يمرّ بها تيار 15 ميلي أمبير يجب التّحويل من الميلي أمبير للأمبير بتقسيم 15 على 1000 فتكون المقادير كما يلي:<br>
+                <span class="ltr">P = 0.015 ^2 * 100 </span>
+                <span class="ltr">P = 0.0225W = 22.5 mW</span>
+                وليس كـ:<br>
+                <span class="ltr">P = 15 ^2 * 100</span>
+                <span class="ltr">P = 22500 W</span>
+                طبعاً النّتيجة الأخيرة خطأ فادح لا يُغتفر, ثم إيّاك وإهمال أولويّة وتسلسل العمليات الحسابية من اليسار لليمين.<br>
+                3)	التّوصيل المختلط للمقاومات:<br>
+                بالدّارات الإلكترونيّة غالباً ما تتصل العناصر بين بعضها البعض بشكل مختلط ومعقد يستلزم التّبسيط كما يظهر بالرّسم رقم (4). يتدفق التّيّار من القطب الموجب ليمرّ عبر المقاومة R1 ثم عند العقدة A يتفرع وينقسم إلى جزئين الأول يمرّ عبر R3 والثّاني عبر R2 ليجتمعا عند العقدة B مشكلان تيّاراً واحداً يعود للقطب السّالب.<br>
+                فرق الجهد V1 = 1.5V سيتوزع على المقاومة R1 والمقاومة المكافئة لـ R2, R3.<figure><img src="../images/basics/b13i4.PNG" alt="التوصيل المختلط للمقاومات" class="myimg xlmyimg"></figure>
+                لحساب تيّار الدّارة الكُلّيّ نقوم بتبسيطها لدارة أساسية تتكون من مصدر جهد ومقاومة، فنوجد المقاومة Rp المكافئة لـ R2, R3 كما يلي:<br>
+                <span class="ltr">1/Rp = 1/R2 + 1/R3</span>
+                <span class="ltr">1/Rp = 1/100 + 1/100</span>
+                <span class="ltr">1/Rp = 0.01 + 0.01</span>
+                <span class="ltr">1/Rp = 0.02</span>
+                <span class="ltr">Rp = 1/0.02</span>
+                <span class="ltr">Rp = 50 ohm</span>
+                والمقاومة  Rالكلّيّة للدّارة:<br>
+                <span class="ltr">R = R1 + Rp</span>
+                <span class="ltr">R = 100 + 50</span>
+                <sapn class="ltr">R = 150 ohm</sapn>
+                ومن ثم نحسب التّيّار المُستجر من المصدرV1 :<br>
+                <span class="ltr">I = V1 / R</span>
+                <span class="ltr">I = 1.5 / 150</span>
+                <span class="ltr">I = 0.01 A = 10 mA</span>
+                ولحساب الاستطاعة المستهلكة بالدّارة:<br>
+                <span class="ltr">P = I * V</span>
+                <span class="ltr">P = 0.01 * 1.5</span>
+                <span class="ltr">P = 0.015 W = 15 mW</span>
+                أو:<br>
+                <span class="ltr">P = I^2 * R</span>
+                <span class="ltr">P = 0.01 ^2 * 150</span>
+                <span class="ltr">P = 0.0001 * 150</span>
+                <span class="ltr">P = 0.015W = 15 mW</span>
+                ولحساب الاستطاعة المستهلكة بالمقاومة R1 :<br>
+                <span class="ltr">P1 = I^2 * R1</span>
+                <span class="ltr">P1 = 0.01 ^2 * 100</span>
+                <span class="ltr">P1 = 0.0001 * 100</span>
+                <span class="ltr">P1 = 0.01 W = 10 mW</span>
+                وتحسب الاستطاعة المستهلكة بالمقاومة Rp المكافئة لـ R1,R2 كما يلي:<br>
+                <span class="ltr">Pp = I^2 * Rp</span>
+                <span class="ltr">Pp = 0.01 * 50</span>
+                <span class="ltr">Pp = 0.0001 * 50</span>
+                <span class="ltr">Pp = 0.005 W = 5 mW</span>
+                لحساب التّيّار المار بالمقاومتين R2, R3 يجب معرفة الجهد عند العقدة A أو فرق الجهد بين العقدتين A, B وهو فرق الجهد  Vpذاته بين طرفي المقاومة المكافئة  Rp = 50 ohm الّتي بات من المعروف شدّة التّيّار 10 ميلي أمبير المار خلالها:<br>
+                <span class="ltr">Vp = I * Rp</span>
+                <span class="ltr">Vp = 0.01 * 50</span>
+                <span class="ltr">Vp = 0.5 V = 500 mV</span>
+                بعدما علمنا الجهد Vp = 0.5 V المطبق على R2, R3 بات ممكنناً حساب Ir2, Ir3 كما يلي:<br>
+                <span>Ir2 = Vp / R2</span>
+                <span class="ltr">Ir2 = 0.5 / 100</span>
+                <span class="ltr">Ir2 = 0.005 A = 5 mA</span>
+                <br>
+                <span class="ltr">Ir3 = Vp / R3</span>
+                <span class="ltr">Ir3 = 0.5 / 100</span>
+                <spa class="ltr">Ir3 = 0.005 A = 5 mA</spa>
+                بجمع التّيّارين Ir2, Ir3 نحصل على 10 ميلي أمبير وهو ذات التّيّار المار عبر R1 والتّيّار الكُلّيّ المُستجر من المصدر V1.<br>
+                بحلّ عقدة التّيّار المار بـالمقاومتين R2, R3 صار ممكناً حساب الاستطاعة المستهلكة بكلتا المقاومتين على حدة كالتالي:<br>
+                <span class="ltr">Pr2 = Ir2 ^2 * R2</span>
+                <span class="ltr">Pr2 = 0.005 ^2 * 100</span>
+                <span class="ltr">Pr2 = 0.000025 * 100</span>
+                <span class="ltr">Pr2 = 0.0025 W = 2.5 mW</span>
+                <br>
+                <span class="ltr"> Pr3 = Ir2 ^2 * R3</span>
+                <span class="ltr">Pr3 = 0.005 ^2 * 100</span>
+                <span class="ltr">Pr3 = 0.000025 * 100</span>
+                <span class="ltr">Pr3 = 0.0025 W = 2.5 mW</span>
+                هنا قد يستشعر الكثيرون صعوبة تحليل دارة مختلطة للوهلة الأولى، لكن بالتّمرين ستجده أسهل وخاصة أنّنا نعتمد فقط على الحساب وعملياته الأربعة الشائعة لدى كل الناس.<br>
+                كنوع من التّدريب جرب تغيير قيمة مقاومة واحدة فقط بالدّارة السّابقة وأعد الحسابات الآنفة باستخدام ورقة وقلم، ثم جرب تعديل الدّارة بإضافة مقاومة رابعة وخامسة وربما سادسة وبكل مرة أعد الحسابات حتّى تكسر حاجز النّفور من تعقيد الدّارات المختلطة وداوها بالّتي كانت هي الداء!<br>
+                بالرّسم رقم (5) صورة لدارتنا المختلطة السّابقة يجري محاكاتها وتحليلها باستخدام برنامج Circuit Wizard   الّذي سيوفر عليك الكثير من الوقت والمجهود برحلة تعلمك ثم ممارستك للإلكترونيّات. خلال المُحاكاة يعطيك البرنامج قيمة الجهود وشدّة التّيّارات واتجاهها بجمع أجزاء الدّارة كما لو أنّها تعمل بالواقع وبالوقت الحقيقيّ.<figure><img src="../images/basics/b13i5.PNG" alt="تحليل الدارة بواسطة الحاسوب" class="myimg xlmyimg"></figure><!--you can use "xlmyimg" for big image-->
+                <br>&#9889يمكنك تنزيل وعرض الدرس كملف بي دي أف من <a href="https://drive.google.com/file/d/1PXMhJItZxyNs1v_E05ITpqsQEsdB2Nzu/view?usp=sharing" target="_blank">هنا.</a>
+                <br>&#9889يمكنك المشاركة والتعليق بالنقر <a href="https://www.facebook.com/yasir.faur.3/posts/969180246943393" target="_blank">هنا.</a>
+                <br>&#9889للحصول على مساعدة ومناقشة موضوع الدرس يمكنك الانضمام لمجموعة #تبسيط_الإلكترونيات على الواتساب من <a href="https://chat.whatsapp.com/KiW3yyh2eeB1Nz03BWIkfA" target="_blank">هنا.</a>
+            </div>
+<!--starting quiz-->
+            <div class="quiz">
+                <div id = "countdown" class="">
+                    <lable id = "sq" >الوقت المخصص للاختبار <span id="quizTime">100</span> ثانية, انقر هنا للبدأ.</lable><!--sq: start quiz-->
+                </div>
+<!--first question-->
+                <div id="q1" class="q1" style="direction: ltr">
+                    <label>لحساب المقاومة المكافئة لثلاث مقاومات على التسلسل نستخدم العلاقة التالية:</label><br><!--q1: first question-->
+                    
+                    <input type = "radio" id = "q1a2" name = "fq"><!--fq: first question-->
+                    <label for="q1a2" style="text-align: left">1/R = 1/R1 + 1/R2 + 1/R3</label><br>
+                    
+                    <input type = "radio" id = "q1a3" name = "fq">
+                    <label for="q1a3">R = 1/R1 + 1/R2 + 1/R3</label><br>
+                    
+                    <input type = "radio" id = "q1a1" name = "fq"><!--q1a1: first answer for first question-->
+                    <label for="q1a1">R = R1 + R2 + R3</label><br>
+                    
+                </div>
+<!--second question-->    
+                <div id="q2" class="q2" style="direction: ltr"><!--q2: second question-->
+                    <label>لحساب المقاومة المكافئة لثلاث مقاومات على التفرع نستخدم العلاقة التالية:</label><br>
+                    
+                    <input type = "radio" id = "q2a1" name = "sq"><!--q2a1: first answer for second question-->
+                    <label for="q2a1">1/R = 1/R1 + 1/R2 + 1/R3</label><br>
+                    
+                    <input type = "radio" id = "q2a2" name = "sq"><!--second question-->
+                    <label for="q2a2">R = R1 + R2 + R3</label><br>
+                    
+                    <input type = "radio" id = "q2a3" name = "sq">
+                    <label for="q2a3">R = 1/R1 + 1/R2 + 1/R3</label><br>
+                    
+                </div>
+<!--third question-->
+                <div id="q3" class="q3" style="direction: ltr">
+                    <label>لحساب المقاومة المكافئة لثلاث مقاومات بتوصيل مختلط نستخدم العلاقة التالية:</label><br><!--q3: third question-->
+                    
+                    <input type = "radio" id = "q3a1" name = "tq"><!--q3a1: first answer for third question-->
+                    <label for="q3a1">1/R = 1/R1 + 1/R2 + 1/R3</label><br>
+                    
+                    <input type = "radio" id = "q3a2" name = "tq"><!--third question-->
+                    <label for="q3a2">R = R1 + R2 + R3</label><br>
+                    
+                    <input type = "radio" id = "q3a3" name = "tq">
+                    <label for="q3a3">يجب تبسيطها لدارة تسلسلية أو تفرعية أولاً.</label><br>
+                    
+                </div>
+            </div>
+<!--end quiz-->
+        </article>
+        <script src = "../js/articles.js"></script>
+    </body>
+</html>

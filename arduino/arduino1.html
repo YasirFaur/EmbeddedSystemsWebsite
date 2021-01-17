@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ar">
     <head>
-        <title>iot</title>
-        <meta name = "description" content="internet of things" />
-        <meta name = "keywords" content = "internet of things, iot" />
+        <title>microcontroller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="arduino" />
+        <meta name = "keywords" content = "arduino" />
         <meta charset="utf-8"/>
         <link rel = "stylesheet" href   =   "../css/normalize.css"/>
         <link rel = "stylesheet" href   =   "../css/articles.css"/>
@@ -14,9 +15,67 @@
             <iframe scrolling = "no" width="854" height="480" src="https://www.youtube.com/embed/S-6zBiAcJpg?list=PL4Xt-92_QIXctSptINpG2WWqdkAroZwh_" frameborder="0" allowfullscreen></iframe>
             
             <div class = "contents">
-                <h1>ماهو الأردوينو</h1>
-                ...قيد الانجاز
+                <h1>الأردوينو (Arduino)</h1><!--title-->
+                اختراع المعالجات (Processors) ثم المتحكمات المصغرة (Microcontrollers) كان نقلة ثورية ببناء الدارات والأنظمة الإلكترونية حيث تم الاعتماد عليها لانتاج أجهزة الترفيه والتسلية كالتلفزيون ومشغلات الفيديو والموسيقى وأجهزة الاستقبال الفضائي وسلسلة تطوّل من المنتجات التي احتلّت كل زاوية بمنازلنا، حتّى أنها تغلغلت بكافة المجالات التجارية والصناعية والعسكرية وأمتد تأثيرها للنواحي الثقافية والاجتماعية من حياتنا؛ فالعالم الكبير بات قرية صغيرة تنساب فيه البيانات بين أقاصي الشرق والغرب بثواني، والمسافات الشاسعة بين الشمال والجنوب تم طيُها.<br><!--in the end of line put <br> -->
+                بالبدايات بناء منتج أو تقديم خدمة استناداً على المتحكمات كان مقتصراً على فئة قليلة من المختصين المعتمدين على لغة الأسمبلي (Assembly) لكتابة برامجهم مُنجِزين عملاً مرهقاً خصوصاً عند التنقيح والتطوير، علاوة على ذلك كان لابد من المعرفة العميقة ببنية المتحكم أو المعالج الذي تُكتب الشيفرة له خصيصاً، الغير صالحة لسواه.<br>
+                ظهرت بيئات برمجية (IDEs) تحت ضغط طلب السوق للمزيد من الأجهزة المزودة بأنظمة إلكترونية مضمّنة فيها تمنحها السرعة، الدقة والسهولة بالاستخدام. مكّنت هذه البيئات شريحة كبيرة من المهندسين، الهواة، الطلاب وحتّى الأطفال من كتابة شيفرة للمتحكمات وبناء مشاريعهم الخاصة.<br>
+                الرائع بهذه البيئات هو اعتمادها على لغات قريبة من لغات البشر عند النظر لمفرداتها وجملها، حتّى أنها مُنِحت لقب ’ لغة عالية المستوى’ لا تتطلب من المبرمج الدخول بتفاصيل تنفيذ تعليماتها عند مستوى مكونات المعالج كوحدة الحساب والمنطق (ALU  Arithmetic and Logic Unit) والمُكدس (Stack) والمسجلات(Registers). كمثال على هذه البيئات الـ CodeVisionAVRالمعتمدة على لغة السي، و البازكوم (Bascom) المعتمدة على لغة البيزك، و حديثاً (Arduino) المستندة على السي بلس بلس (C++) المصحوبة بلوحات تطوير ملائمة للتعلم والاستخدام مباشرة بمشاريعنا مع عدد كبير من الوحدات الجاهزة (Modules) سهلة التركيب على لوح التطوير الأساسي مثل الحساسات، شاشات الاظهار، قيادة المحركات والاتصالات السلكية واللاسلكية. تأتيك هذه البيئة المجانية - حتّى لحظة تحرير سطور هذا المقال - مع عدد كبير من المكتبات والأمثلة التي تُحدّت باستمرار لتشمل أكبر عدد ممكن من المشاريع التي قد تخطر بالبال؛ لذا قبل شروعك بكتابة شيفرتك الخاصة ألقي نظرة على مشاريع من سبقك وابدأ من حيث انتهوا مُضيفاً تعديلاتك الشخصية لتوفير عناء شهور.<br>
+                يوماً بعد يوم صار الأردوينو الدماغ المسيطر بآلف المشاريع والتطبيقات بفضل رواده من مصنعين، هواة، طلاب، مبدعين، مبرمجين ومحترفين جذبهم كلفة المشاريع المنخفضة بحدود 20 دولار كسعر للوحة التطوير، ومما ساهم بشعبيته إمكانية تنصيب بيئته البرمجية على مختلف أنظمة التشغيل وبقائها مفتوحة المصدر ليس من جهة تعديل شيفرتها والمساهمة بتطويرها بل حتّى لوحات التطوير مفتوحة المصدر يمكن الحصول على مخططاتها بغرض التعديل بما يلائم مشروعك الخاص.<br>
+                وفق تجاربي المتواضعة وجدت بالأردوينو أفضل مدخل لتخصص البرمجيات والإلكترونيات يتناسب مع تفكير اليافعين والمراهقين ويلبي تصاميم وتخطيط المختصين.<br>
+                <figure><img src="../arduino/images/arduino%20leonardo.jpg" alt="arduino leonardo" class="myimg"></figure><!--you can use "xlmyimg" for big image-->
+                <br>&#9889يمكنك تنزيل وعرض الدرس كملف بي دي أف من <a href="https://drive.google.com/file/d/1NiSZFO15THqJ8uUSi2v7H19ZxQSuZcfv/view?usp=sharing" target="_blank">هنا.</a>
+                <br>&#9889يمكنك المشاركة والتعليق بالنقر <a href="https://www.facebook.com/yasir.faur.3/posts/945021032692648" target="_blank">هنا.</a>
+                <br>&#9889للحصول على مساعدة ومناقشة موضوع الدرس يمكنك الانضمام لمجموعة #تبسيط_الإلكترونيات على الواتساب من <a href="https://chat.whatsapp.com/KiW3yyh2eeB1Nz03BWIkfA" target="_blank">هنا.</a>
             </div>
+<!--starting quiz-->
+            <div class="quiz">
+                <div id = "countdown" class="">
+                    <lable id = "sq" >الوقت المخصص للاختبار <span id="quizTime">100</span> ثانية, انقر هنا للبدأ.</lable><!--sq: start quiz-->
+                </div>
+<!--first question-->
+                <div id="q1" class="q1">
+                    <label></label>لغة الأسمبلي عالية المستوى.<br><!--q1: first question-->
+                    
+                    <input type = "radio" id = "q1a1" name = "fq"><!--q1a1: first answer for first question-->
+                    <label for="q1a1">ما سبق غير صحيح؛ تتطلب معرفة ببنية المتحكم أوالمعالج.</label><br>
+                    
+                    <input type = "radio" id = "q1a2" name = "fq"><!--fq: first question-->
+                    <label for="q1a2">لا ادري.</label><br>
+                    
+                    <input type = "radio" id = "q1a3" name = "fq">
+                    <label for="q1a3">ما سبق صحيح.</label><br>
+                    
+                </div>
+<!--second question-->    
+                <div id="q2" class="q2"><!--q2: second question-->
+                    <label>الأردوينو مناسب لـ...</label><br>
+                    
+                    <input type = "radio" id = "q2a1" name = "sq"><!--q2a1: first answer for second question-->
+                    <label for="q2a1">المهندسين, الهواة, الطلاب وحتى الأطفال.</label><br>
+                    
+                    <input type = "radio" id = "q2a2" name = "sq"><!--second question-->
+                    <label for="q2a2">للمختصين فقط.</label><br>
+                    
+                    <input type = "radio" id = "q2a3" name = "sq">
+                    <label for="q2a3">الأطفال فقط.</label><br>
+                    
+                </div>
+<!--third question-->
+                <div id="q3" class="q3">
+                    <label>الأردوينو مشروع مفتوح المصدر.</label><br><!--q3: third question-->
+                    
+                    <input type = "radio" id = "q3a1" name = "tq"><!--q3a1: first answer for third question-->
+                    <label for="q3a1">ما سبق صحيح.</label><br>
+                    
+                    <input type = "radio" id = "q3a2" name = "tq"><!--third question-->
+                    <label for="q3a2">لا أدري.</label><br>
+                    
+                    <input type = "radio" id = "q3a3" name = "tq">
+                    <label for="q3a3">ما سبق غير صحيح، البيئة ولوحات التطوير محتكرة لمصنعيها.</label><br>
+                    
+                </div>
+            </div>
+<!--end quiz-->
         </article>
         <script src = "../js/articles.js"></script>
     </body>
