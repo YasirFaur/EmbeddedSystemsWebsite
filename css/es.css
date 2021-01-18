@@ -177,19 +177,27 @@ footer .aboutusAndSocial{
     width: 100%;
     
 }
-footer .aboutus{
+.aboutus{
     width: 100%;
-    opacity: 0.7;
+    background-color: #000000;
+    opacity: 0.9;
     display: none;
 }
-footer .aboutus p{
+
+.aboutus p{
     font-family: JFflat;
     color:#fff;
-    text-align: center;
+    direction: rtl;
+    text-align: right;
     font-weight: bold;
     padding: 10px;
-    background-color: #000;
 }
+
+.aboutus a{
+    color: #2196f3;
+    text-decoration: none;
+}
+
 footer .social{
     width:100%;
     padding-top: 200px;
@@ -252,8 +260,8 @@ footer .social img:hover{
          padding-top:90px;
     } 
    header p{
-        font-size:16px;
-        letter-spacing: 2px;
+        font-size:5vw;
+        letter-spacing: 1px;
     }
     
     header .arabicHeader{
@@ -276,6 +284,7 @@ footer .social img:hover{
         width: 90%;
         border-right: none;
         border-bottom: 2px solid #ddd;
+        letter-spacing: 1px;
     } 
     
     .binaryBackground{
@@ -307,10 +316,12 @@ footer .social img:hover{
         line-height: 15px;
     }
     .copyright{
-        font-size: 11px;
+        font-size: 14px;
         /*font-family:JFflat;*/
-        font-family:cursive;
-        font-weight: 400;
+        /*font-family:cursive;*/
+        font-family: digifaw;
+        font-weight: 100;
+        letter-spacing: 1px;
     }
 }/*xx  small*/
 
@@ -325,7 +336,7 @@ footer .social img:hover{
     }
     
     header .arabicHeader{
-        font-size: 30px;
+        font-size: 7vw;
         letter-spacing: 0px;
     }
     
@@ -374,9 +385,12 @@ footer .social img:hover{
     }
     
     .copyright{
-        font-size: 11px;
-        font-family:digifaw;
-        font-weight: 400;
+        font-size: 14px;
+        /*font-family:JFflat;*/
+        /*font-family:cursive;*/
+        font-family: digifaw;
+        font-weight: 100;
+        letter-spacing: 1px;
     }
 }/* x small Galaxy s5*/
 
@@ -386,12 +400,12 @@ footer .social img:hover{
     }
     
     header p{
-        font-size:28px;
+        font-size:5vw;
         letter-spacing: 3px;
     }
     
     header .arabicHeader{
-        font-size: 54px;
+        font-size: 7vw;
         letter-spacing: 0px;
     }
     
@@ -450,12 +464,12 @@ footer .social img:hover{
     }
     
     header p{
-        font-size:36px;
-        letter-spacing: 6px;
+        font-size:4vw;
+        letter-spacing: 2px;
     }
     
     header .arabicHeader{
-        font-size: 64px;
+        font-size: 8vw;
         letter-spacing: 0px;
     }
     

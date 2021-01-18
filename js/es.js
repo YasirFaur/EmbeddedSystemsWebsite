@@ -167,7 +167,7 @@ iot.onclick = function () {
 about.onclick = function () {
     "use strict";
     topic.style.display = 'none';//for hidding all articles and topics
-    aboutus.style.display = 'inline';
+    aboutus.style.display = 'block';
     social.style.paddingTop = '5px';
     marginCorrect();
 };
