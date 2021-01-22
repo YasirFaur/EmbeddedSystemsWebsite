@@ -114,6 +114,9 @@ td{
     width: 100%;
 }
 
+.fb-like{
+    height: 50px;
+}
 @media(max-width:359px ){/*xx  small*/
     div{
         font-size:5vw;

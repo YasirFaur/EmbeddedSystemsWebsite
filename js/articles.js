@@ -1,5 +1,5 @@
 /*Written Yasir Faur*/
-/*global document, setInterval, clearInterval */
+/*global document, setInterval, clearInterval, alert */
 var startQuiz = document.getElementById('sq');//sq: clik me for starting quiz
 var question1 = document.getElementById('q1');//first question 
 var question2 = document.getElementById('q2');//second question
