@@ -1,5 +1,5 @@
 /*Written Yasir Faur*/
-/*global document, setInterval, clearInterval, alert */
+/*global document, setInterval, clearInterval, alert, window */
 var startQuiz = document.getElementById('sq');//sq: clik me for starting quiz
 var question1 = document.getElementById('q1');//first question 
 var question2 = document.getElementById('q2');//second question
@@ -21,6 +21,12 @@ var q3a1 = document.getElementById('q3a1');//q3a1: first answer for third questi
 var q3a2 = document.getElementById('q3a2');//q3a2: second answer for third question
 var q3a3 = document.getElementById('q3a3');//q3a3: third answer for third question
 
+var fLike = document.getElementsByClassName('fb-like')[1];/*LIKE into quiz*/
+
+function toNextLesson(){
+                     window.open('/EmbeddedSystemsWebsite/' + startQuiz.title, 'myScreen'); 
+}
+
 startQuiz.onclick = function () {
     'use strict';
     if (quizProgress === 0) {quizProgress = quizTime; }//not again at the same quiz
@@ -33,7 +39,8 @@ startQuiz.onclick = function () {
         question1.style.display = 'block';
         question2.style.display = 'block';
         question3.style.display = 'block';
-    
+        fLike.style.display = 'block';
+        
         countdownTimer = setInterval(
             function () {
                 quizProgress = quizProgress - 1;
@@ -45,7 +52,18 @@ startQuiz.onclick = function () {
                     
                     if (result >= 2) {
                         startQuiz.innerHTML = "أحسنت! يمكنك الانتقال للدرس التالي.";
-                        startQuiz.style.color = "green";
+                        startQuiz.style.color = "#21fd21";
+                        
+                        if (startQuiz.title !== "0") {
+                                                     countdownTimer = setInterval(function progressToNextLesson(){
+                                                         startQuiz.innerHTML += ">"
+                                                         if (startQuiz.innerHTML.length >= 63) {
+                                                             clearInterval(countdownTimer);
+                                                             toNextLesson();
+                                                         }
+                                                     },500);
+                        }
+                        
                     } else {
                         startQuiz.innerHTML = "يمكنك المحاولة مجددا, انقر هنا!";
                         startQuiz.style.color = "red";
@@ -68,6 +86,7 @@ startQuiz.onclick = function () {
                     question1.style.display = 'none';//hide first question
                     question2.style.display = 'none';//hide second question
                     question3.style.display = 'none';//hide third question
+                    /*fLike.style.display = 'none';//hide LIKE into quiz*/
                 }
                 
                 if ((quizProgress / quizTime) * 100 <= 70) {

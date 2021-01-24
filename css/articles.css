@@ -86,6 +86,11 @@ td{
     border-radius: 4px;
     padding: 4px;
 }
+
+.quiz .fb-like{
+    display: none; /*hedding like from facebook*/
+    border: 0px;
+}
 .q1{
     display: none;
 }
