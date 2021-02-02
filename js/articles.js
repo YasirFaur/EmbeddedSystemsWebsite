@@ -56,7 +56,7 @@ startQuiz.onclick = function () {
                         
                         if (startQuiz.title !== "0") {
                                                      countdownTimer = setInterval(function progressToNextLesson(){
-                                                         startQuiz.innerHTML += ">"
+                                                         startQuiz.innerHTML += ">"                                                         
                                                          if (startQuiz.innerHTML.length >= 63) {
                                                              clearInterval(countdownTimer);
                                                              toNextLesson();

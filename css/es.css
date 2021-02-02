@@ -173,6 +173,7 @@ footer{
    
 }
 
+
 footer .aboutusAndSocial{
     width: 100%;
     
@@ -196,6 +197,16 @@ footer .aboutusAndSocial{
 .aboutus a{
     color: #2196f3;
     text-decoration: none;
+}
+
+.map{
+    width:70%;  
+    border: 2px solid #9E9E9E;
+    margin: 4px auto 10px auto;
+    display: block;
+    height: 300px;
+    border-radius: 4px;
+    
 }
 
 footer .social{
@@ -447,7 +458,7 @@ footer .social img:hover{
     
     footer .aboutus p{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 25px;
     }
     
     .copyright{
@@ -512,7 +523,7 @@ footer .social img:hover{
 
     footer .aboutus p{
         font-size: 18px;
-        line-height: 22px;
+        line-height: 27px;
     }
     
     .copyright{
@@ -555,7 +566,7 @@ footer .social img:hover{
     }
     footer .aboutus p{
         font-size: 20px;
-        line-height: 24px;
+        line-height: 30px;
     }
     
     .copyright{
