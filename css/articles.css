@@ -113,6 +113,7 @@ td{
     width: 56%;
     display: block;
     box-shadow: 2px 2px 2px #535353, -2px -2px 2px #535353;
+    cursor:zoom-in;
 }
 
 .xlmyimg{

@@ -23,8 +23,16 @@ var q3a3 = document.getElementById('q3a3');//q3a3: third answer for third questi
 
 var fLike = document.getElementsByClassName('fb-like')[1];/*LIKE into quiz*/
 
-function toNextLesson(){
-                     window.open('/EmbeddedSystemsWebsite/' + startQuiz.title, 'myScreen'); 
+var zoomImg = document.getElementsByClassName('myimg');
+
+zoomImg.onclick = function () {
+    'use strict';
+    alert("zoomImg.style.cursor");
+};
+
+function toNextLesson() {
+    'use strict';
+    window.open('/EmbeddedSystemsWebsite/' + startQuiz.title, 'myScreen');
 }
 
 startQuiz.onclick = function () {
@@ -55,13 +63,13 @@ startQuiz.onclick = function () {
                         startQuiz.style.color = "#21fd21";
                         
                         if (startQuiz.title !== "0") {
-                                                     countdownTimer = setInterval(function progressToNextLesson(){
-                                                         startQuiz.innerHTML += ">"                                                         
-                                                         if (startQuiz.innerHTML.length >= 63) {
-                                                             clearInterval(countdownTimer);
-                                                             toNextLesson();
-                                                         }
-                                                     },500);
+                            countdownTimer = setInterval(function progressToNextLesson() {
+                                startQuiz.innerHTML += ">";
+                                if (startQuiz.innerHTML.length >= 63) {
+                                    clearInterval(countdownTimer);
+                                    toNextLesson();
+                                }
+                            }, 500);
                         }
                         
                     } else {
